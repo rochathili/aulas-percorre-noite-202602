@@ -9,7 +9,7 @@ let nome = "Thiago"
 
 if (idade >= 18) {
     console.log("Você tem 18 anos ou mais, pode tirar CNH");
-} 
+}
 else {
     console.log("Você não tem 18 anos, não pode tirar CNH");
 }
