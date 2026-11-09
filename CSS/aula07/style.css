@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .musica {
     background-image: url("https://img.magnific.com/free-photo/artistic-blurry-colorful-wallpaper-background_58702-10066.jpg?semt=ais_hybrid&w=740&q=80");
     border-radius: 50px;
@@ -44,5 +49,14 @@
 .playlist {
     display: flex;
     justify-content: center;
-    gap:25px
+    gap:25px;
+
+    /* Em containers flex é possível quebrar linha automaticamente utilizando a propriedade flex-wrap.*/
+    /* Flex-wrap tem algumas configurações:
+    nowrap = os itens não pulam linha, que é o padrão
+    wrap = os itens pulam linha quando não tem mais espaço na linha que estão
+    wrap-reverse = se o wrap joga os itens que sobraram para a linha de baixo, o wrap-reverse joga os itens que sobraram para a linha de cima 
+    
+    W-Ket*/
+    flex-wrap: wrap-reverse;
 }
