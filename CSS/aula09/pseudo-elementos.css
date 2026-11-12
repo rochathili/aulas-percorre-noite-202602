@@ -1,0 +1,28 @@
+/* O pseudoelemento first-letter seleciona apenas a primeira letra do elemento escolhido e aplica as configurações de CSS isoladamente, deixando o restante do texto intocado. */
+h1::first-letter {
+    color: orange;
+    font-size: 10rem;
+}
+
+p::first-line {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+/* Como o pseudoelemento seleciona partes de algum elemento, é possível também selecionar o espaço vazio antes e depois de tal elemento. No exemplo abaixo inserimos um emoji com texto ANTES dos li e DEPOIS dos li foi inserida uma imagem.
+Esses elementos inseridos via CSS não existem no HTML, por isso os chamamos de pseudo-elementos. */
+li::before {
+    content: "🐧 Sagualdinho";
+}
+
+li::after {
+    content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5eKJsJW4ZMKleFTrvUgzWYe0Pxd6sDMi074yz0CZ7og&s=10");
+}
+
+/* Também é possível fazer seleções condicionais, por exemplo, é possível alterar as partes selecionadas de um elemento. */
+p::selection {
+    background-color: red;
+}
+
+
+/* A diferença entre pseudoclassse: e pseudoelemento:: é que a pseudoclasse age em uma AÇÃO e o pseudolemento age em PARTES do elemento selecionado. */
